@@ -1,0 +1,2 @@
+//{$DEFINE LITE_VERSION}
+

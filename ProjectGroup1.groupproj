@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2DFA677B-228A-4EF6-917E-8818E8E0ACED}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DeployNICPadlock.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\data\delphi\TestReg\TestReg.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DeployNICPadlock">
+        <MSBuild Projects="DeployNICPadlock.dproj"/>
+    </Target>
+    <Target Name="DeployNICPadlock:Clean">
+        <MSBuild Projects="DeployNICPadlock.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DeployNICPadlock:Make">
+        <MSBuild Projects="DeployNICPadlock.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestReg">
+        <MSBuild Projects="C:\data\delphi\TestReg\TestReg.dproj"/>
+    </Target>
+    <Target Name="TestReg:Clean">
+        <MSBuild Projects="C:\data\delphi\TestReg\TestReg.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestReg:Make">
+        <MSBuild Projects="C:\data\delphi\TestReg\TestReg.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DeployNICPadlock;TestReg"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DeployNICPadlock:Clean;TestReg:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DeployNICPadlock:Make;TestReg:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
