@@ -9,6 +9,12 @@ The documentation still lives on in an S3 bucket, and [includes screenshots](htt
 ## Reviews
 Softpedia reviewed the application and included [several screenshots here](https://www.softpedia.com/get/Network-Tools/Misc-Networking-Tools/NIC-Padlock.shtml).
 
+The application includes a small windows service that is deployed to remote hosts on-demand, and is used to actually control the state of a network card, and show messages to logged-on users.
+
+I developed this program in my spare time over many months, and learned a great deal at the time about how to tackle a moderately complex securiy application that performed low-level Windows functionality.
+
+This program is written to be multi-threaded, and have minimal dependencies.
+
 ## Description
 NIC Padlock is designed to allow a system administrator to either temporarily or permanently disable a remote system’s network interface cards (NIC’s). NIC Padlock also supports enforcing that all adapters are enabled on the remote system. A quick summary of its features are:
 
