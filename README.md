@@ -11,7 +11,7 @@ Softpedia reviewed the application and included [several screenshots here](https
 
 The application includes a small windows service that is deployed to remote hosts on-demand, and is used to actually control the state of a network card, and show messages to logged-on users.
 
-I developed this program in my spare time over many months, and learned a great deal at the time about how to tackle a moderately complex securiy application that performed low-level Windows functionality.
+I developed this program in my spare time over many months, and learned a great deal at the time about how to tackle a moderately complex security application that performed low-level Windows functionality.
 
 This program is written to be multi-threaded, and have minimal dependencies.
 
