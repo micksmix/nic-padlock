@@ -1,8 +1,8 @@
 # NIC Padlock
 
-![](nicpadlock.png)
+![](screenshots/nicpadlock.png)
 
-This is a commercial program I personally developed in ~2011 and sold for a time. It's no longer actively updated, but I did design and develop 100% of this Windows program (and embedded Windows service that is deployed to remote systems).
+This is a commercial program I personally developed in 2011 and sold for a time. It's no longer actively updated, but I did design and develop 100% of this Windows program (and embedded Windows service that is deployed to remote systems).
 
 The documentation still lives on in an S3 bucket, and [includes screenshots](http://wildpawsoftware.com.s3-website-us-west-2.amazonaws.com/nicpadlock/screenshots/).
 
